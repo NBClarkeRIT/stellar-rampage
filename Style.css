@@ -33,6 +33,9 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 .main {
@@ -83,9 +86,33 @@ body {
   z-index: -1;
   opacity: 1;
 }
+
 .para:nth-of-type(2) {
   background-image: url(Images/SpaceBackground_Parallax2.png);
   animation: gradient 90s ease-in-out infinite;
+}
+
+.buddy{
+  background-image: url(Images/Blue.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 20%;
+  left: 0;
+  width: 50px;
+  height: 50px;
+
+  animation: flyAndSpin 30s ease-out infinite;
+  z-index: -1;
+}
+
+@keyframes flyAndSpin {
+  0% {
+    transform: translateX(-100px) rotate(30deg);
+  }
+  100% {
+    transform: translateX(calc(100vw + 100px)) rotate(360deg);
+  }
 }
 
 @keyframes wave {
