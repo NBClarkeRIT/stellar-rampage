@@ -63,7 +63,7 @@ body {
   padding: 10px 20px;
   border: 2px solid rgb(151, 198, 228);
   border-radius: 8px;
-  transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.05s, color 0.1s;
 }
 
 .download-link:hover {
