@@ -23,6 +23,10 @@ body {
     }
 }
 
+.main{
+  display: flex;
+  
+}
 body {
   background-color: #0e0e10;
   color: white;
@@ -38,7 +42,23 @@ body {
   overflow-x: hidden;
 }
 
-.main {
+.suggestions{
+  background-image: url(Images/Card\ X3.png);
+  display: flex;
+  height: 370px;
+  width: 390px ;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 40px;
+  border-radius: 12px;
+  color: white;
+  max-width: 420px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.zipBox {
   background-image: url(Images/Card\ X3.png);
   display: flex;
   height: 300px;
@@ -54,6 +74,47 @@ body {
   margin: 0;
   font-size: 28px;
   letter-spacing: 1px;
+}
+
+
+.suggestions textarea,
+.suggestions input[type="email"] {
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 6px;
+  border: none;
+  font-size: 16px;
+  width: 100%;
+  min-width: 300px;
+  max-width: 300px;
+  box-sizing: border-box;
+  resize: none;
+}
+
+.suggestions textarea
+{
+height: 130px;
+}
+.suggestions button {
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+  background-color: #258d7d;
+  color: white;
+  cursor: pointer;
+}
+
+.suggestions button:hover {
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+  background-color: #f7f7f7;
+  cursor: pointer;
+  color: #1a1a1d;
 }
 
 .download-link {
