@@ -118,17 +118,17 @@ height: 130px;
 }
 
 .download-link {
-  color: rgb(151, 198, 228);
+  color: #ffffff;
   font-size: 18px;
   text-decoration: none;
   padding: 10px 20px;
-  border: 2px solid rgb(151, 198, 228);
+  border: 2px solid #258d7d;
   border-radius: 8px;
   transition: background-color 0.05s, color 0.1s;
 }
 
 .download-link:hover {
-  background-color: rgb(151, 198, 228);
+  background-color: #258d7d;
   color: #1a1a1d;
 }
 
