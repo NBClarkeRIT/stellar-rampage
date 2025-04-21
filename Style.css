@@ -1,60 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-
-.bebas-neue-regular {
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-
-  .name{
-    text-align: center;
-    background: rgba(0, 0, 0, 0.771);
-    margin: 10px;
-    border-style: groove;
-    border-color: rgb(0, 0, 0);
-  }
-
-h1{
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 40px;
-    color: white;
-    text-decoration: none;
-}
-
-li,a{
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 25px;
-    color: white;
-    text-decoration: none;
-}
-
-header{
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    padding: 10px 3%;
-}
-
-.nav_links li{
-    display: inline-block;
-    padding: 3px 20px;
-    border-radius: 5em;
-    margin: 10px;
-    border: solid;
-}
 body {
     margin: auto;
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     overflow: auto;
-    background: linear-gradient(315deg, rgb(14, 3, 13) 3%, rgb(8, 11, 14) 38%, rgb(13, 44, 42) 68%, rgb(19, 6, 8) 98%);
-    animation: gradient 45s ease infinite;
-    background-size: 400% 400%;
+    animation: gradient 100s ease-in-out infinite;
+    background-size: 100% 150%;
     background-attachment: fixed;
+    background-repeat: repeat;
+    background-image: url(Images/Space\ Background.png);
 }
 
 @keyframes gradient {
@@ -67,75 +21,6 @@ body {
     100% {
         background-position: 0% 0%;
     }
-}
-
-
-/* The side navigation menu */
-.sidebar {
-  margin: 0;
-  padding: 0;
-  width: 225px;
-  background: linear-gradient(180deg,rgb(233, 233, 233),rgba(255, 255, 255, 0));
-  position: fixed;
-  height: 100%;
-}
-
-
-
-.main{
-  display: grid;
-  height: 200px;
-  border: 50px rgb(75, 15, 15);
-  padding: 20px;
-  margin-left: 225px;
-  grid-template-columns: repeat(auto-fit, minmax(450px,1fr));
-  gap: 1rem;
-}
-
-.card {
-  margin: 1rem;
-  text-align: center;
-  width: 80%;
-  height: 290px;
-  border-radius: 1em;
-  border-style: ridge;
-  border: black;
-  border-width: 5px;
-  position: relative;
-  overflow: hidden;
-  color:white;
-}
-
-.items {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  transform-style: preserve-3d;
-  transition: all 0.5s ease;
-
-}
-.overlay{
-  position:absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.front{
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  width: 100%;
-  height: 250%;
-  backface-visibility: hidden;
-}
-
-.front {
-  background: rgb(10, 182, 142);
 }
 
 body {
@@ -151,14 +36,15 @@ body {
 }
 
 .main {
+  background-image: url(Images/Card\ X3.png);
   display: flex;
+  height: 300px;
+  width: 320px ;
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  background-color: #1a1a1d;
   padding: 40px;
   border-radius: 12px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
 }
 
 .main h4 {
@@ -182,57 +68,24 @@ body {
   color: #1a1a1d;
 }
 
-.front infection2d{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 2em;
-}
-/* Sidebar links */
-.sidebar a {
-  display: block;
-  color: black;
-  padding: 16px;
-  text-decoration: none;
-  transition-duration: 0.2s;
-}
-
-/* Active/current link */
-.sidebar a.active {
-  background-color: #531425;
-  color: white;
-}
-
-/* Links on mouse-over */
-.sidebar a:hover:not(.active) {
-  background-color: #ffffff;
-  color: rgb(0, 0, 0);
-}
-
-.wave {
-  background: rgb(255 255 255 / 25%);
-  border-radius: 1000% 1000% 0 0;
+.para {
+  animation: gradient 110s ease-in-out infinite;
+  background-image: url(Images/SpaceBackground_Parallax.png);
+  background-repeat: repeat;
+  background-size: 80% auto;
+  background-position: top left;
+  background-attachment: fixed;
   position: fixed;
-  width: 200%;
-  height: 50em;
-  animation: wave 25s -3s linear infinite;
-  transform: translate3d(0, 0, 0);
-  opacity: 0.1;
-  bottom: 0;
+  top: 0;
   left: 0;
+  width: 100vw;
+  height: 100vh;
   z-index: -1;
+  opacity: 1;
 }
-
-.wave:nth-of-type(2) {
-  bottom: -15.25em;
-  animation: wave 18s linear reverse infinite;
-  opacity: 0.2;
-}
-
-.wave:nth-of-type(3) {
-  bottom: -20.5em;
-  animation: wave 20s -1s reverse infinite;
-  opacity: 0.3;
+.para:nth-of-type(2) {
+  background-image: url(Images/SpaceBackground_Parallax2.png);
+  animation: gradient 90s ease-in-out infinite;
 }
 
 @keyframes wave {
@@ -256,3 +109,4 @@ body {
       transform: translateX(1);
   }
 }
+
